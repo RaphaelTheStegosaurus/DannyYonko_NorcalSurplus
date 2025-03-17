@@ -8,70 +8,46 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background: rgba(0, 0, 0, 0.5);
+
+
+address{
+    animation: change-card-bg 2s linear infinite;
+    /* background: ; */
     color: white;
-
-    h1 {
-        font-weight: 800;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 2rem;
-        font-weight: 800;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1.25rem;
-        font-weight: 800;
-        text-align: center;
-    }
-}
-
-.contact {
-    animation: change-card-bg 20s ease infinite alternate;
-
-
-    background: linear-gradient(var(--card-bg), #159957, #155799);
-    ;
-    color: white;
-    height: 25dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-block: 20px;
-
+    padding: 30px 20px;
+    border-radius: 25px;
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
         font-weight: 800;
         width: 100%;
         text-align: center;
-        margin-bottom: 30px;
-
-        strong {
-            font-size: .75rem;
-            color: #00ff00;
-        }
+        margin-block: 30px;
     }
-
+    p{
+        font-size: 1.25rem;
+        text-align: center;
+        margin-block: 20px;
+    }
     h4 {
         margin-left: 20px;
-        font-size: 1rem;
-        line-height: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
 
         a {
             margin-left: 5px;
-            color: white;
+            color: cyan;
+            text-shadow: 0 0 5px black;
             text-decoration: none;
-            font-size: .75rem;
+            font-size: 1rem;
             letter-spacing: 1px;
         }
+    }
+    h5{
+        font-size: 1.25rem;
+        margin-block: 20px;
     }
 }
 
@@ -96,7 +72,11 @@ footer {
     }
 }
 
-
+@property --card-bg {
+    inherits: initial;
+    syntax: "<angle>";
+    initial-value: 0deg;
+}
 
 @keyframes scroll-right {
     0% {
@@ -120,16 +100,13 @@ footer {
 
 @keyframes change-card-bg {
     0% {
-        --card-bg: 0deg;
+        /* --card-bg: 0deg; */
+        background: linear-gradient(0deg, #159957, #155799);
     }
 
     100% {
-        --card-bg: 360deg;
+        /* --card-bg: 360deg; */
+        background: linear-gradient(360deg, #159957, #155799);
     }
 }
 
-@property --card-bg {
-    inherits: initial;
-    syntax: "<angle>";
-    initial-value: 0deg;
-}

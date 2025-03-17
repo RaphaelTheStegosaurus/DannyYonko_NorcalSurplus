@@ -1,0 +1,32 @@
+article{
+    width: 90%;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 20px;
+    h3{
+        width: 100%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        font-weight: 500;
+        margin-block: 20px;
+        margin-inline: auto;
+        color: transparent;
+    }
+    p{
+        color: aqua;
+    }
+    ul{
+        color: white;
+        list-style: square;
+        list-style-position: inside
+    }
+    ol{
+        color: white;
+        list-style: decimal;
+        list-style-position: outside;
+    }
+    li{
+        margin-block: 5px;
+        padding-right: 15px
+    };
+}

@@ -2,16 +2,16 @@ import "./styles/app.css";
 import "./styles/media-queries.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Background } from "./components/background";
-import { List_viewer } from "./containers/list_viewer";
 import { Header } from "./containers/header";
 import { Footer } from "./containers/footer";
-import { Card_contact } from "./components/card_contact";
+import { Address_card } from "./components/address_card";
+import { Card_manager } from "./components/card_manager";
 export const App = () => {
   return (
     <>
       <Header />
-      <Card_contact />
-      <List_viewer />
+      <Card_manager/>
+      <Address_card/>
       <Footer />
       <Background />
     </>
