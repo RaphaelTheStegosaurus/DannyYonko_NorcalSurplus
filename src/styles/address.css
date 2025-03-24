@@ -1,0 +1,82 @@
+address {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block: 0px;
+    padding: 30px 20px;
+    border-radius: 25px;
+    background: var(--Color-01);
+    animation: scaleCardAddressAnimation both;
+    animation-timeline: view(70% 10%);
+
+    h3 {
+        color: var(--Font-Color);
+        font-size: 2.2rem;
+        font-weight: 800;
+        width: 100%;
+        text-align: center;
+        margin-block: 30px;
+        animation: ScratchTextAnimation both;
+        animation-timeline: view(70% 25%);
+    }
+
+    p {
+        color: var(--Font-Color) !important;
+        font-size: 1.35rem;
+        text-align: center;
+        margin-block: 20px;
+        animation: TextRevealAnimation both;
+        animation-timeline: view(70% 10%);
+    }
+
+    h4 {
+        text-align: start;
+        width: 100%;
+        height: min-content;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        animation: SlideItems both;
+        animation-timeline: view(50% 30%);
+        color: var(--Font-Color);
+        a {
+            margin-left: 5px;
+            color: var(--Secondary-Color) !important;
+            text-shadow: 0 0 5px black;
+            text-decoration: none;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    h5 {
+        color: var(--Font-Color);
+        font-size: 1.25rem;
+        margin-block: 20px;
+    }
+}
+
+@keyframes changeBG {
+    from {
+        background: linear-gradient(0deg, #159957, #155799);
+    }
+
+    to {
+        background: linear-gradient(360deg, #159957, #155799);
+    }
+}
+
+@keyframes scaleCardAddressAnimation {
+    from {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

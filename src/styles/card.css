@@ -1,32 +1,76 @@
-article{
+article {
     width: 90%;
     padding: 30px 20px;
-    background: rgba(0, 0, 0, 0.65);
+    background: var(--Primary-Color);
     border-radius: 20px;
-    h3{
+    animation: revealAnimation;
+    animation-timeline: view(80% 5%);
+    z-index: 10;
+    h3 {
         width: 100%;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #fff;
+        color: var(--Secondary-Color);
         font-weight: 500;
-        margin-block: 20px;
+        margin: 20px auto 30px;
+        animation: autoRevealAnimation linear both;
+        animation-timeline: view(70% 25%);
+    }
+
+    p {
+        width: 80%;
         margin-inline: auto;
-        color: transparent;
+        color: var(--Color-02);
+        font-weight: 600;
+        animation: scaleText both;
+        animation-timeline: view(70% 10%);
     }
-    p{
-        color: aqua;
-    }
-    ul{
-        color: white;
+
+    ul {
         list-style: square;
-        list-style-position: inside
+        list-style-position: inside;
     }
-    ol{
-        color: white;
+
+    ol {
         list-style: decimal;
         list-style-position: outside;
     }
-    li{
-        margin-block: 5px;
-        padding-right: 15px
-    };
+    
+    li {
+        color: var(--Font-Color);
+        margin-block: 20px;
+        padding-right: 15px;
+        animation: SlideItems both;
+        animation-timeline: view(70% 10%);
+    }
 }
+
+@keyframes autoRevealAnimation {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes scaleText {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes revealAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+

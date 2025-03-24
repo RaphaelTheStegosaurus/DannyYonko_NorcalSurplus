@@ -1,5 +1,7 @@
 import "./styles/app.css";
 import "./styles/media-queries.css";
+import "./styles/animations.css";
+import "./styles/palettecolors.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Background } from "./components/background";
 import { Header } from "./containers/header";
@@ -10,8 +12,8 @@ export const App = () => {
   return (
     <>
       <Header />
-      <Card_manager/>
-      <Address_card/>
+      <Card_manager />
+      <Address_card />
       <Footer />
       <Background />
     </>

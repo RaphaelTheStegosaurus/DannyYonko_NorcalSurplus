@@ -1,0 +1,28 @@
+@keyframes SlideItems{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes TextRevealAnimation {
+    from{
+        color: transparent;
+    }
+    to{
+        color: white;
+    }
+}
+@keyframes ScratchTextAnimation {
+    from{
+        text-decoration: none;
+        word-spacing: 0;
+    }
+    to{
+        text-decoration: underline;
+        word-spacing: 8px;
+    }
+}

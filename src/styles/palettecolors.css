@@ -1,0 +1,28 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Spearmint / Green */
+        --Primary-Color: #617969;
+        /* Scallop Seashell  / Light*/
+        --Secondary-Color: #e4d7cf;
+        /* Puce / Brown  */
+        --Color-01: #98705d;
+        /* Burgundy  / Red  */
+        --Color-02: #8a3240;
+        --Font-Color: White;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Scallop Seashell / Light*/
+        --Primary-Color: #e4d7cf;
+        /* Spearmint / Green */
+        --Secondary-Color: #617969;
+        /* Puce / Brown  */
+        --Color-01: #98705d;
+        /* Burgundy Red  */
+        --Color-02: #8a3240;
+        --Font-Color: Black;
+    }
+
+}

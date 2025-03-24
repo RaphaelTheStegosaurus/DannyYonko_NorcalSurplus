@@ -1,3 +1,4 @@
+import "../styles/address.css";
 export const Address_card = () => {
   return (
     <address>

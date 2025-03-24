@@ -5,7 +5,7 @@
     width: 100dvw;
     height: 100dvh;
     overflow: hidden;
-
+    background: var(--Secondary-Color);
     .carousel {
 
         overflow: hidden;
@@ -41,6 +41,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            
         }
     }
 

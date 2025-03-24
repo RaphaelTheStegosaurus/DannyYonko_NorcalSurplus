@@ -27,7 +27,7 @@ export const Background = () => {
         <div className="carousel-track right">
           {row01.map((item, index) => (
             <div key={index} className="carousel-slide">
-              <img src={item} alt="material" />
+              <img className="revealBlur" src={item} alt="material" />
             </div>
           ))}
         </div>
