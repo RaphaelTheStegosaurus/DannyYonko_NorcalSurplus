@@ -1,0 +1,42 @@
+footer {
+    margin-top: 50px;
+    width: 100%;
+    padding-inline: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--Primary-Color);
+    color: var(--Font-Color);
+    position: relative;
+    bottom: 0;
+
+    p {
+        margin-top: 20px;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .social-media{
+        width: 100%;
+        /* background: yellow; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        a{
+            margin-inline: 20px;
+            font-size: 1.5rem;
+            color: var(--Font-Color);
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+/* importar como svg */
+#INSTAGRAM-ICON *{
+    fill: aqua;
+}
+#FACEBOOK-ICON{
+}

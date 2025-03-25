@@ -32,7 +32,9 @@
         height: 90dvh;
         position: relative;
     }
-
+    footer{
+        height: 100dvh;
+    }
 
     .background {
         .carousel {

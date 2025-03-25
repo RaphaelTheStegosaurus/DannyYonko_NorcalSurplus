@@ -4,7 +4,7 @@ article {
     background: var(--Primary-Color);
     border-radius: 20px;
     animation: revealAnimation;
-    animation-timeline: view(80% 5%);
+    animation-timeline: view(90% 5%);
     z-index: 10;
     h3 {
         width: 100%;

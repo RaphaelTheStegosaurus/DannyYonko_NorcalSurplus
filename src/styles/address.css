@@ -44,8 +44,8 @@ address {
         color: var(--Font-Color);
         a {
             margin-left: 5px;
-            color: var(--Secondary-Color) !important;
-            text-shadow: 0 0 5px black;
+            color: var(--Font-Color) !important;
+            text-shadow: 0 0 20px var(--Color-02);
             text-decoration: none;
             font-size: 1.1rem;
             letter-spacing: 1px;
