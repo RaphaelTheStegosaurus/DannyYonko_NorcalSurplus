@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   PATTERN_CUSTOMER_EMAIL,
   PATTERN_CUSTOMER_NAME,
