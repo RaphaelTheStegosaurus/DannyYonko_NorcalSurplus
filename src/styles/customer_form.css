@@ -1,0 +1,37 @@
+form {
+    width: 100%;
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .group-field {
+        padding-block: 10px;
+
+        .form-field {
+            background: transparent !important;
+            &:focus {
+                color: var(--Font-Color) !important;
+                box-shadow: 0 0 10px var(--Font-Color) !important;
+            }
+            &:invalid{
+                color: red I !important;
+            }
+
+        }
+    }
+    button {
+        margin-top: 30px;
+        height: 3rem;
+        border-radius: 20px;
+        background: var(--Color-01) !important;
+        color: var(--Font-Color) !important;
+    }
+}
+.form-field:not(:placeholder-shown)~label::after{
+    background: transparent !important;
+    color: var(--Secondary-Color) !important;
+}
+.form-field:focus~label::after{
+    background: transparent !important;
+    color: var(--Secondary-Color) !important;
+}
