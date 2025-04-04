@@ -51,6 +51,25 @@ import epic23 from "../assets/electrical/pic23.jpg";
 import epic24 from "../assets/electrical/pic24.jpg";
 import epic25 from "../assets/electrical/pic25.jpg";
 import epic26 from "../assets/electrical/pic26.jpg";
+//
+import image01 from "../assets/images/pic01.jpg";
+import image02 from "../assets/images/pic02.jpeg";
+import image03 from "../assets/images/pic03.jpeg";
+import image04 from "../assets/images/pic04.jpeg";
+import image05 from "../assets/images/pic05.jpeg";
+import image06 from "../assets/images/pic06.jpeg";
+import image07 from "../assets/images/pic07.jpeg";
+import image08 from "../assets/images/pic08.jpeg";
+import image09 from "../assets/images/pic09.jpeg";
+import image10 from "../assets/images/pic10.jpeg";
+import image11 from "../assets/images/pic11.jpeg";
+import image12 from "../assets/images/pic12.jpeg";
+import image13 from "../assets/images/pic13.jpg";
+import image14 from "../assets/images/pic14.jpg";
+import image15 from "../assets/images/pic15.jpg";
+import image16 from "../assets/images/pic16.jpg";
+
+//
 export const MATERIAL_GALLERY = [
   pic01,
   pic02,
@@ -107,4 +126,23 @@ export const ELECTRICAL_GALLERY = [
   epic24,
   epic25,
   epic26,
+];
+
+export const IMAGES_GALLERY = [
+  image01,
+  image02,
+  image03,
+  image04,
+  image05,
+  image06,
+  image07,
+  image08,
+  image09,
+  image10,
+  image11,
+  image12,
+  image13,
+  image14,
+  image15,
+  image16,
 ];

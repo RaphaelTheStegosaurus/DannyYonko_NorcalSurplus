@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/background.css";
-import { MATERIAL_GALLERY, ELECTRICAL_GALLERY } from "../const/assets_manager";
+import {  IMAGES_GALLERY } from "../const/assets_manager";
 export const Background = () => {
   const NUMBER_OF_IMAGES = 6;
   const [row01, setrow01] = useState<string[]>([]);
@@ -11,14 +11,9 @@ export const Background = () => {
     return shuffled.slice(0, count);
   };
   useEffect(() => {
-    setrow01(getRandomImages(MATERIAL_GALLERY, NUMBER_OF_IMAGES));
-    setrow02(getRandomImages(ELECTRICAL_GALLERY, NUMBER_OF_IMAGES));
-    setrow03(
-      getRandomImages(
-        [...MATERIAL_GALLERY, ...MATERIAL_GALLERY],
-        NUMBER_OF_IMAGES
-      )
-    );
+    setrow01(getRandomImages(IMAGES_GALLERY, NUMBER_OF_IMAGES));
+    setrow02(getRandomImages(IMAGES_GALLERY, NUMBER_OF_IMAGES));
+    setrow03(getRandomImages(IMAGES_GALLERY, NUMBER_OF_IMAGES));
   }, []);
 
   return (
