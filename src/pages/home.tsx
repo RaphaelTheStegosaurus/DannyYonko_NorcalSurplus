@@ -1,9 +1,9 @@
 import { Address_card } from "../components/address_card";
 import { Background } from "../components/background";
 import { Card_manager } from "../components/card_manager";
-import Navbar from "../components/Navbar";
 import { Footer } from "../containers/footer";
 import { Header } from "../containers/header";
+import Navbar from "../components/navbar"
 
 export default function Home() {
   return (
