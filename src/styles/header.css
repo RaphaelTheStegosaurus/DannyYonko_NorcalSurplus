@@ -1,47 +1,42 @@
 header {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-    .title {
+    .presentation-information {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-    }
-    
-    .presentation-information {
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
-        scroll-behavior: smooth;
-        scroll-snap-align: end;
+        h2{
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+        }
+        p{
+            font-family: sans-serif;
+        }
     }
 
     .about-information {
         width: 100%;
         display: flex;
-        padding: 1.5rem 1rem  2rem;
+        padding: 1.5rem 1rem 2rem;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         scroll-behavior: smooth;
         scroll-snap-align: center;
         background: rgba(0, 0, 0, 0.25);
+
         p {
             padding-bottom: 20px;
         }
 
-        .slider {
-            background-size: cover;
-            background-position: center center;
-            aspect-ratio: 16/9;
-            transition: all ease 1s;
-        }
+
     }
 
     h1 {

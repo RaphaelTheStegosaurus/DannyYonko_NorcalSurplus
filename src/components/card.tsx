@@ -5,10 +5,11 @@ import { Unorden_list } from "./unorden_list";
 import "../styles/card.css";
 interface Props {
   data: CardInformations;
+  tagId?: string;
 }
-export const Card: React.FC<Props> = ({ data }) => {
+export const Card: React.FC<Props> = ({ data, tagId }) => {
   return (
-    <article>
+    <article id={tagId}>
       <h3>{data.title}</h3>
       {data.paragraph && <p>{data.paragraph}</p>}
       {data.type_list == "ol" ? (

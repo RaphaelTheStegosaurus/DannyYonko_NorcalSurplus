@@ -1,0 +1,7 @@
+.slider {
+    background-size: cover;
+    background-position: center center;
+    aspect-ratio: 16/9;
+    transition: all ease 1s;
+    border: 5px solid var(--Primary-Color);
+}

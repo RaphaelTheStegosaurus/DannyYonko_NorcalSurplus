@@ -1,17 +1,16 @@
-import { Link } from "react-router";
+import { Address_card } from "../components/address_card";
 import { Background } from "../components/background";
+import Navigation from "../components/navigation";
+import { Footer } from "../containers/footer";
+import { Header } from "../containers/header";
 
 export default function Contact_us() {
   return (
     <>
-      <h1>Contact Us</h1>
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem magni
-        quibusdam nam neque officiis officia doloribus! Soluta assumenda ut quia
-        ad mollitia sed nesciunt consectetur, laboriosam commodi est voluptas
-        quo.
-      </h2>
-      <Link to={"/"}>Back to Home</Link>
+      <Header />
+      <Navigation />
+      <Address_card />
+      <Footer/>
       <Background />
     </>
   );

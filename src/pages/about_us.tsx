@@ -1,12 +1,23 @@
 import { Background } from "../components/background";
-import { Link } from "react-router";
+import Navigation from "../components/navigation";
+import { Footer } from "../containers/footer";
+import { Header } from "../containers/header";
 
 export default function About_us() {
   return (
     <>
-      <h1>About Us</h1>
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, repellat. Est quam dolorem accusantium nemo praesentium corporis quo aliquam. Dolores autem aut nostrum voluptas, consequuntur excepturi accusamus cumque? Eius, officiis.</h2>
-      <Link to={"/"}>Back to Home</Link>
+      <Header />
+      <Navigation />
+      <div id="ABOUT_US" className="about-information">
+        <p className="col-8">
+          At Norcal Surplus, we specialize in purchasing surplus electrical
+          materials and equipment, offering top cash payments to businesses and
+          individuals across California and neighboring states. Our mission is
+          to provide a seamless, efficient, and profitable solution for those
+          looking to sell their excess electrical inventory.
+        </p>
+      </div>
+      <Footer/>
       <Background />
     </>
   );

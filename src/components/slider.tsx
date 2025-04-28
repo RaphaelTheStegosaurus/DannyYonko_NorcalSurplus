@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { IMAGES_GALLERY } from "../const/assets_manager";
+import "../styles/slider.css";
 export const Slider = () => {
   const [slider, setslider] = useState(
     IMAGES_GALLERY[Math.floor(Math.random() * IMAGES_GALLERY.length)]
