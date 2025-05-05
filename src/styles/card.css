@@ -1,24 +1,25 @@
 article {
-    width: 90%;
-    padding: 30px 20px;
+    margin-block: 20px;
+    padding: 10px 30px 30px;
     background: var(--Primary-Color);
-    border-radius: 20px;
+    opacity: 0.9;
+    border-radius: 10px;
     animation: revealAnimation;
     animation-timeline: view(90% 5%);
     z-index: 10;
     h3 {
-        width: 100%;
+        margin-block: 20px;
         color: var(--Secondary-Color);
         font-weight: 500;
-        margin: 20px auto 30px;
         animation: autoRevealAnimation linear both;
         animation-timeline: view(70% 25%);
     }
 
     p {
+        background: transparent !important;
         width: 80%;
         margin-inline: auto;
-        color: var(--Color-02);
+        color: var(--Font-Color) ;
         font-weight: 600;
         animation: scaleText both;
         animation-timeline: view(70% 10%);
@@ -42,7 +43,14 @@ article {
         animation-timeline: view(70% 10%);
     }
 }
-
+section{
+    padding: 30px 20px ;
+    margin-block: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    p{
+        background: white;
+    }
+}
 @keyframes autoRevealAnimation {
     from {
         transform: translateY(-50px);

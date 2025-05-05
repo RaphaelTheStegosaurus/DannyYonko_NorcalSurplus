@@ -1,200 +1,23 @@
 @media only screen and (orientation: portrait) {
-    header {
-        height: 200dvh;
-
-        .title {
-            height: 100dvh;
-
-            h1 {
-                font-weight: 500;
-                font-size: 5rem;
-            }
-
-            img {
-                margin-block: 30px;
-                width: 60%;
-                object-fit: cover;
-
-            }
-        }
-
-        .presentation-information {
-            height: 100dvh;
-            padding-inline: 10dvw;
-
-            h2 {
-                font-size: 2.8rem;
-            }
-
-            .slider {
-                width: 90%;
-                margin: 30px auto;
-            }
-
-            p {
-                font-size: 2rem;
-            }
-        }
-
-        /* .about-information {
-            height: 100dvh;
-            p {
-                font-size: 1.5rem;
-                text-wrap: wrap;
-                width: 90%;
-            }
-        } */
-    }
-
-    address {
-        width: 95%;
-        height: 90dvh;
-        position: relative;
-    }
-
-    footer {
-        height: 100dvh;
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .slider {
+        width: 90%;
+        margin: 30px auto;
     }
 
     .background {
         .carousel {
             transform-origin: 50% 50%;
             transform: rotateZ(3deg) translateY(20px);
-
             width: 600dvw;
         }
     }
 
-    article {
-        margin-block: 5dvh;
-        min-height: 90dvh;
-
-        /* max-height: 100dvh; */
-        h3 {
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        p {
-            font-size: 1.25rem;
-        }
-
-        li {
-            font-size: 1.1rem;
-        }
-    }
-
-    .navigation {
-        min-height: 50px;
-        max-height: min-content;
-
-        button {
-            top: 20px;
-            left: 20px;
-        }
-
-        nav {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    }
 }
 
 @media only screen and (orientation: landscape) {
-    header {
-
-        height: 200dvh;
-
-        .title {
-            height: 100dvh;
-
-            h1 {
-                font-weight: 500;
-                font-size: 7rem;
-            }
-
-            img {
-                width: 25%;
-                object-fit: cover;
-
-            }
-        }
-
-        .presentation-information {
-            height: 100dvh;
-            padding-inline: 10dvw;
-
-            h2 {
-                font-size: 3.5rem;
-            }
-
-            .slider {
-                width: 45dvw;
-                margin: 20px auto;
-            }
-
-            p {
-                font-size: 2rem;
-            }
-        }
-
-        /* .about-information {
-            min-height: 100dvh;
-
-
-        } */
-    }
-
-
-
-
-
-    article {
-        min-height: 80dvh;
-        margin-bottom: 10dvh;
-    }
-
-    .contact {
-        width: 350px;
-        height: 150px;
-        border-radius: 15px;
-        position: fixed;
-        z-index: 5;
-        left: 20px;
-        bottom: 10px;
-    }
-
-    .list-materials {
-        z-index: 10;
-        min-height: 120dvh !important;
-        margin-bottom: 10dvh;
-
-        ul {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            column-gap: 100px;
-        }
-    }
-
-    footer {
-        min-height: 100dvh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 50px 30px;
-
-        h1 {
-            grid-area: 1 / 1 / 2 / 3;
-            text-align: center;
-        }
-
-        p {
-            grid-area: 2 / 1 / 3 / 3;
-        }
+    .slider {
+        width: 45dvw;
+        margin: 20px auto;
     }
 
     .background {
@@ -206,17 +29,4 @@
         }
     }
 
-    .navigation {
-        height: 50px;
-
-        button {
-            left: 50px;
-        }
-
-        nav {
-            flex-direction: row;
-            align-items: center;
-            justify-content: end;
-        }
-    }
 }

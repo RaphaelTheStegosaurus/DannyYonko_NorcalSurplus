@@ -1,17 +1,12 @@
 import { Address_card } from "../components/address_card";
-import { Background } from "../components/background";
-import Navigation from "../components/navigation";
-import { Footer } from "../containers/footer";
-import { Header } from "../containers/header";
+import { Page_container } from "../containers/page_container";
 
 export default function Contact_us() {
   return (
     <>
-      <Header />
-      <Navigation />
-      <Address_card />
-      <Footer/>
-      <Background />
+      <Page_container title="Contact Us">
+        <Address_card />
+      </Page_container>
     </>
   );
 }

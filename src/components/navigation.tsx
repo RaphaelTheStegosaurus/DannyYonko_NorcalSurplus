@@ -1,26 +1,54 @@
-import { Link } from "react-router";
-import "../styles/navigation.css";
-import { useState } from "react";
+import { Link, useLocation } from "react-router";
+
 export default function Navigation() {
-  const [IsShowingMenu, setIsShowingMenu] = useState(false);
+  const location = useLocation();
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
   return (
-    <div className="navigation ">
-      <button
-        className={IsShowingMenu ? "active" : ""}
-        onClick={() => {
-          setIsShowingMenu(!IsShowingMenu);
-          console.log(`The Menu is ${IsShowingMenu}`);
-        }}
+    <nav className="container-fluid bg-light bg-opacity-50 btn-group position-fixed bottom-0 py-2 px-1 d-flex flex-lg-row justify-content-between">
+      <Link
+        className={`btn py-2 ${
+          isActive("/") ? "btn-outline-primary" : "btn-primary"
+        }`}
+        to={"/"}
       >
-        {IsShowingMenu ? " ✖︎ " : " ☰ "}
-      </button>
-      <nav className={IsShowingMenu ? "active" : ""} id="Menu">
-        <Link to={"/"}>Home</Link>
-        <Link to={"/about_us"}>About Us</Link>
-        <Link to={"/buyer_services"}>Buyer Services</Link>
-        <Link to={"/demolition_services"}>Demolition Services</Link>
-        <Link to={"/contact_us"}>Contact Us</Link>
-      </nav>
-    </div>
+        Home
+      </Link>
+      <Link
+        className={`btn py-2 ${
+          isActive("/about_us") ? "btn-outline-primary" : "btn-primary"
+        }`}
+        to={"/about_us"}
+      >
+        About Us
+      </Link>
+      <Link
+        className={`btn py-2 ${
+          isActive("/buyer_services") ? "btn-outline-primary" : "btn-primary"
+        }`}
+        to={"/buyer_services"}
+      >
+        Buyer Services
+      </Link>
+      <Link
+        className={`btn py-2 ${
+          isActive("/demolition_services")
+            ? "btn-outline-primary"
+            : "btn-primary"
+        }`}
+        to={"/demolition_services"}
+      >
+        Demolition Services
+      </Link>
+      <Link
+        className={`btn py-2 ${
+          isActive("/contact_us") ? "btn-outline-primary" : "btn-primary"
+        }`}
+        to={"/contact_us"}
+      >
+        Contact Us
+      </Link>
+    </nav>
   );
 }
