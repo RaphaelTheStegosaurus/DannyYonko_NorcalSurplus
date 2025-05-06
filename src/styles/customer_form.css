@@ -33,5 +33,5 @@ form {
 }
 .form-field:focus~label::after{
     background: transparent !important;
-    color: var(--Secondary-Color) !important;
+    /* color: var(--Secondary-Color) !important; */
 }

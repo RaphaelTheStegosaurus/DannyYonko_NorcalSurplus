@@ -6,7 +6,7 @@ export default function Navigation() {
     return location.pathname === path;
   };
   return (
-    <nav className="container-fluid bg-light bg-opacity-50 btn-group position-fixed bottom-0 py-2 px-1 d-flex flex-lg-row justify-content-between">
+    <nav className="container-fluid bg-light bg-opacity-50 btn-group position-fixed bottom-0 py-2 px-1 d-flex flex-lg-row justify-content-between border-top">
       <Link
         className={`btn py-2 ${
           isActive("/") ? "btn-outline-primary" : "btn-primary"

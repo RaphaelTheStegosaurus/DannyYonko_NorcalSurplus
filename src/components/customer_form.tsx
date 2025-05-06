@@ -3,11 +3,11 @@ import {
   PATTERN_CUSTOMER_EMAIL,
   PATTERN_CUSTOMER_NAME,
 } from "../const/patterns";
-import "../styles/customer_form.css";
+// import "../styles/customer_form.css";
 export const Customer_form = () => {
   return (
-    <form className="customer-form">
-      <div className="group-field form-floating">
+    <form className="customer-form my-5">
+      <div className="group-field form-floating my-2">
         <input
           className="form-field form-control"
           pattern={PATTERN_CUSTOMER_NAME}
@@ -20,7 +20,7 @@ export const Customer_form = () => {
           Name :
         </label>
       </div>
-      <div className="group-field form-floating">
+      <div className="group-field form-floating my-2">
         <input
           className="form-field form-control"
           pattern={PATTERN_CUSTOMER_EMAIL}
@@ -33,16 +33,16 @@ export const Customer_form = () => {
           Email :
         </label>
       </div>
-      <div className="group-field form-floating">
+      <div className="group-field form-floating my-2">
         <textarea
-          className="form-field form-control"
+          className="form-field form-control "
           name="CUSTOMER_MESSAGE"
           id="CUSTOMER_MESSAGE"
           required
         ></textarea>
         <label htmlFor="CUSTOMER_MESSAGE">Message :</label>
       </div>
-      <button type="submit">SEND</button>
+      <button className="btn btn-primary btn-lg w-100 my-3" type="submit">SEND</button>
     </form>
   );
 };
